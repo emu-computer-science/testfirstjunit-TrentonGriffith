@@ -8,14 +8,14 @@ import org.junit.*;
 public class DateAddDaysTest {
 	
 	@Test
-	public static void TestaddMonth() {
+	public void TestaddMonth() {
 		Date over = new Date(1, 30, 2024);
 		over.addOneDay();
 		assertEquals(new Date(2,1,2024), over);
 	}
 	
 	@Test
-	public static void TestaddYear() {
+	public void TestaddYear() {
 		Date year = new Date(12, 31, 2024);
 		year.addOneDay();
 		assertEquals(new Date(1, 1, 2025), year);
